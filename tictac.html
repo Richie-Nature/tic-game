@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tic tac</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="tictac.css">
+</head>
+<body>
+    <div class="container w-75">
+        <div class="jumbotron">
+           <h1>Welcome to Tic Tac Toe!</h1>
+           <p>Get ready to play!</p>
+           <button class="btn btn-primary" id="butt" >Restart!</button>
+        </div>
+        <div class="tic-tac">
+          <div id="winanim"></div>
+            <table  class="tic-table" id="tic-table">
+                <tbody>
+                    <tr class="t-r">
+                        <td class="t-d" id="1"></td>
+                        <td class="t-d" id="2"></td>
+                        <td class="t-d" id="3"></td>
+                    </tr>
+                    <tr class="t-r">
+                        <td class="t-d" id="4"></td>
+                        <td class="t-d" id="5"></td>
+                        <td class="t-d" id="6"></td>
+                    </tr>
+                    <tr class="t-r">
+                        <td class="t-d" id="7"></td>
+                        <td class="t-d" id="8"></td>
+                        <td class="t-d" id="9"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="result" class="float-left bg-danger" style="margin-top: -200px; margin-left: 10px;">
+    </div>
+   
+    <div class="container w-50" >
+        <div class="row" id="playersection">
+                <div class="col-sm-4 offset-sm-3 custom-control custom-radio">
+                    <input type="radio" name="player" id="1player" class="custom-control-input rbtn" checked>
+                    <label for="1player" class="custom-control-label"><span id="player1">Player X</span></label>
+                </div>
+                <div class="col-sm-4 custom-control custom-radio">
+                    <input type="radio" name="player" id="2player"class="custom-control-input rbtn">
+                    <label for="1player" class="custom-control-label"><span id="player1">Player O</span></label>
+                </div>
+        </div>
+    </div>
+<!--<div class="container">
+          Modal 
+   <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Tic Tac Toe</h4>
+          <button type="button" class="close" data-dismiss = "modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p class="text-danger font-weight-bold">Game Over!</p>
+          <p class="">Reset Game</p>
+        </div>
+        <div class="modal-footer">
+          <button type="reset" class="btn btn-danger float-left">Reset</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal" disabled>Close</button>
+        </div>
+      </div>
+    </div>
+   </div>modal  ends
+</div>modal container ends-->
+
+</body>
+<script src="ticgame.js"></script>
+</html>

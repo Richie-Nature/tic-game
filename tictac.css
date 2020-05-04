@@ -1,0 +1,21 @@
+.tic-table {
+    margin: auto;
+   
+}
+.t-d{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 3px solid black;
+    font-size: 50px;
+}
+
+/**function myFunction() {
+  var div = document.getElementById("mine");
+  var rect = div.getBoundingClientRect();
+  x = rect.left;
+  y = rect.top;
+  w = rect.width;
+  h = rect.height;
+  alert ("Left: " + x + ", Top: " + y + ", Width: " + w + ", Height: " + h);
+}/
